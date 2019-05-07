@@ -1,0 +1,10 @@
+#include <LiquidCrystal.h> // include the library code
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2); // initialize interface pins
+void setup() {
+lcd.begin(16, 2); // 幾個字,幾行
+lcd.print("06050740"); // Print a message to the LCD.
+}
+void loop() {
+lcd.setCursor(0, 1); //指標點道第1行第0個
+lcd.print("YU");
+}
